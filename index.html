@@ -461,9 +461,93 @@
               </li>
             </ul>
           </div>
+          <div class="subscribe">
+            <p class="text-subscribe">Subscribe</p>
+            <form class="form-subscribe">
+              <label class="label-subscribe" for="email-footer">
+                <input
+                  class="input-subscribe"
+                  type="email"
+                  name="email-footer"
+                  id="email-footer"
+                  placeholder="E-mail"
+              /></label>
+              <button class="footer-bt" type="submit">
+                Subscribe<svg class="footer-bt-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telega"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </footer>
       <!-- #endregion Footer -->
+
+      <!-- #region Overlay -->
+      <div class="overlay">
+        <div class="forma-overlay">
+          <button class="close-bt" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-clous"></use>
+            </svg>
+          </button>
+          <p class="text-overlay">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="contacts-box-overlay">
+            
+            <div class="box-label"><label class="label-list" for="user-name">Name</label>
+            <div class="box-input">
+              <input class="input-list" type="text" id="user-name" name="user-name">
+                <svg class="input-icon" height="24" width="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </input>
+            </div>
+            </div>
+            <div class="box-label"><label class="label-list" for="user-phone">Phone</label>
+            <div class="box-input">
+              <input class="input-list" type="tel" id="user-phone" name="user-phone">
+                <svg class="input-icon" height="24" width="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </input>
+            </div>
+            </div>
+            <div class="box-label"><label class="label-list" for="user-mail">E-mail</label>
+            <div class="box-input">
+              <input class="input-list" type="email" id="user-mail" name="user-mail">
+                <svg class="input-icon" height="24" width="18">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </input>
+            </div>
+            </div>
+            <div class="box-comment">
+              <label class="label-list" for="user-comment">Comment</label>
+              <textarea class="textarea" id="user-comment" placeholder="Text input" name="user-comment" required=""></textarea>
+              </div>
+            <div class="checkbox">
+              <input class="input-checkbox" 
+              name="user-privacy" 
+              type="checkbox" 
+              id="user-privacy" 
+              value="true"/>
+              <label class="label-checkbox" for="user-privacy">
+                <span class="span-checkbox">
+                  <svg class="svg-checkbox" width="10" height="8">
+                    <use href="./images/icons.svg#icon-voron"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="privacy" href="#">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="bt-checkbox" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- #endregion Overlay -->
     </div>
   </body>
 </html>
