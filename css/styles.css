@@ -592,6 +592,13 @@ p {
 /* #endregion-FOOTER */
 
 /* #region-Overlay*/
+
+.overlay.is-open {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -620,27 +627,24 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
-.overlay.is-open {
-  visibility: visible;
-  pointer-events: auto;
-  opacity: 1;
-}
+
 .close-bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
+  fill: #2e2f42;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 .close-bt:hover,
 .close-bt:focus {
@@ -716,7 +720,7 @@ p {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox {
+.div-checkbox {
   margin-bottom: 24px;
 }
 .input-checkbox {
@@ -733,6 +737,7 @@ p {
 }
 .label-checkbox {
   cursor: pointer;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -755,6 +760,13 @@ p {
 .svg-checkbox {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.checkbox:checked + .label-checkbox > .span-checkbox {
+  border: none;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
 .privacy {
   line-height: 1.33;
   text-decoration: underline;
@@ -762,19 +774,24 @@ p {
   color: #4d5ae5;
 }
 .bt-checkbox {
-  display: block;
-  margin: 0 auto;
-  font: 500 16px / 1.5 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
-  color: #ffffff;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
   border: none;
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
-  background: #4d5ae5;
+  margin-top: 48px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 .bt-checkbox:hover,
 .bt-checkbox:focus {
