@@ -593,12 +593,6 @@ p {
 
 /* #region-Overlay*/
 
-.overlay.is-open {
-  visibility: visible;
-  pointer-events: auto;
-  opacity: 1;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -612,6 +606,11 @@ p {
   pointer-events: none;
   transition: visibility 300ms linear, opacity 300ms linear,
     pointer-events 300ms linear;
+}
+.overlay.is-open {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
 }
 .forma-overlay {
   position: absolute;
