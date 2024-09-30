@@ -691,6 +691,9 @@ p {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-list:focus {
+  border-color: #4d5ae5;
+}
 .modal-input:focus {
   border-color: #4d5ae5;
 }
@@ -707,6 +710,9 @@ p {
   border-color: #4d5ae5;
 }
 
+.box-comment {
+  margin-bottom: 16px;
+}
 .user-comment {
   width: 100%;
   height: 120px;
@@ -725,7 +731,7 @@ p {
 .div-checkbox {
   margin-bottom: 24px;
 }
-.input-checkbox {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -815,5 +821,10 @@ p {
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
+  font-size: 12px;
+}
+
+.textarea:focus {
+  border-color: #4d5ae5;
 }
 /* #endregion-Overlay */
